@@ -60,3 +60,15 @@ themeToggleBtn.addEventListener('click', () =>  {
     }
 });
 // Swiper
+const swiper = new Swiper('.swiper',{           //create new instance of swiper and assign it to a variable
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    breakpoints: {}
+})
